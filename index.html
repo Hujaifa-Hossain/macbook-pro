@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mac Book</title>
+  <!-- using bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+  <main>
+    <section class="px-5 mt-4">
+      <div class="">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="px-5">
+              <img class="img-fluid" src="images/mac.png" alt="">
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <h2>Customize your Blue 24-inch iMac with Apple M1 chip.</h2>
+              <p>Apple M1 chip with 8‑core CPU, 8‑core GPU, and 16‑core Neural Engine 8GB unified memory 256GB SSD
+                storage 24-inch Retina display with True Tone Backlit Magic keyboard!</p>
+              <div class="my-5">
+                <h3>Memory</h3>
+                <button id="memory-8gb-button" type="button" class="btn btn-outline-dark">8GB unified memory</button>
+                <button id="memory-16gb-button" type="button" class="btn btn-outline-dark">16GB unified memory</button>
+              </div>
+              <div class="my-5">
+                <h3>Storage</h3>
+                <button id="256gb-storage-button" type="button" class="btn btn-outline-dark">256GB SSD storage</button>
+                <button id="512gb-storage-button" type="button" class="btn btn-outline-dark">512GB SSD storage</button>
+                <button id="1tb-storage-button" type="button" class="btn btn-outline-dark">1TB SSD storage</button>
+              </div>
+              <div class="my-5">
+                <h3>Chose your delivery option</h3>
+                <button id="free-dalivery" type="button" class="btn btn-outline-dark">Friday, Aug 25 Free prime
+                  delivery</button>
+                <button id="charge-dalivery" type="button" class="btn btn-outline-dark">Friday, Aug 21 delivery charge
+                  $20</button>
+              </div>
+            </div>
+            ​
+            <!-- price calculate  -->
+            <table class="table w-50">
+              <tbody>
+                <tr>
+                  <th scope="col">Best Price</th>
+                  <th scope="col">$<span id="bast-price">1299</span></th>
+                </tr>
+                <tr>
+                  <th scope="row">Extra Memory Cost</th>
+                  <td>$<span id="extra-memory-cost">0</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Extra Storage Cost</th>
+                  <td>$<span id="extra-storage-cost">0</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Delivery Charge</th>
+                  <td colspan="2">$<span id="total-dalivery-charge">0</span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th scope="col">Total Price</th>
+                  <th scope="col">$<span id="total-price">1299</span></th>
+                </tr>
+              </tfoot>
+            </table>
+            <h5>Add Promo code</h5>
+            <div class="input-group mb-3 w-50">
+              <input id="promo-input-field" type="text" class="form-control rounded" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+              <button class="input-group-text btn btn-danger rounded" id="cupon-button">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+  </main>
+  <footer class="text-center">
+    <h1>Total: $<span id="total-cost">1299</span></h1>
+  </footer>
+  ​
+  <!-- javascrpit -->
+  <script src="js/script.js"></script>
+</body>
+​
+
+</html>
